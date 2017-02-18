@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteMappingsManager">
+    <list>
+      <list>
+        <remote-mappings server-id="python@ssh://ssudhe13@home.cs.earlham.edu:22/eccs/users/ssudhe13/pyprojects/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/bin/python3.5">
+          <settings>
+            <list>
+              <mapping local-root="$PROJECT_DIR$" remote-root="/eccs/users/ssudhe13/software-engineering/CS345-Project-1-The-Grapher" />
+            </list>
+          </settings>
+        </remote-mappings>
+      </list>
+    </list>
+  </component>
+</project>
