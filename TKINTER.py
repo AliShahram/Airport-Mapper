@@ -1,5 +1,6 @@
 #-*- coding: utf-8 -*-
 
+
 from tkinter import *
 import tkinter.constants
 import tkinter.filedialog
@@ -12,6 +13,7 @@ class Window(tkinter.Frame):
         self.master = master
         
         self.init_window()
+        root.geometry("300x400")
         
     def init_window(self):
         self.master.title("QUIT")
@@ -31,17 +33,10 @@ class Window(tkinter.Frame):
         # define options for opening or saving a file
         self.file_opt = options = {}
         options['defaultextension'] = '.csv'
-        options['filetypes'] = [('all files', '.*'), ('text files', '.csv')]
         options['initialdir'] = 'C:\\'
-        options['initialfile'] = 'myfile.csv'
         options['parent'] = root
         options['title'] = 'This is a title'
         
-        # This is only available on the Macintosh, and only when Navigation Services are installed.
-        #options['message'] = 'message'
-        
-        # if you use the multiple file version of the module functions this option is set automatically.
-        #options['multiple'] = 1
         
         # defining options for opening a directory
         self.dir_opt = options = {}
@@ -52,29 +47,21 @@ class Window(tkinter.Frame):
         
     def askopenfilename(self):
         
-        """Returns an opened file in read mode.
-        This time the dialog just returns a filename and the file is opened by your own code.
-        """
-        
         # get filename
         filename = tkinter.filedialog.askopenfilename(**self.file_opt)
     
         # open file on your own
         if filename:
             driver.runner(filename)
-            return (filename)
-    
-    
-        
+
         
         
     def client_exit(self):
         exit()
 
 
+if __name__ == "__main__":
 
-
-root = Tk()
-root.geometry("300x400")
-app = Window(root)
-root.mainloop()
+    root = Tk()
+    Window(root).pack()
+    root.mainloop()
