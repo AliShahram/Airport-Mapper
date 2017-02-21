@@ -4,6 +4,8 @@ from tkinter import *
 from tkinter.filedialog import askopenfilename
 import tkinter.constants
 from tkinter import ttk
+import webbrowser
+import os.path
 from frontend import Frontend
 from importer import file_import
 
@@ -52,9 +54,14 @@ class GraphApp:
 		if self.server_is_running:
 			self.web_server.stop()
 
+	def open_readme(self):
+		webbrowser.open("file://" + os.path.abspath("readme.txt"))
+
 	def fxn_mapper(self, typ):
 		if typ == 'upload':
 			return self.upload
+		if typ == 'readme':
+			return self.open_readme
 		if typ == 'quit':
 			return self.quit
 
