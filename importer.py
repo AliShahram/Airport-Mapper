@@ -28,7 +28,6 @@ def file_import(input_file):
 		for index in indexes:
 			nodes_list[index]['num_links'] += 1
 
-
 	# Reading in file
 	df = pd.read_csv(input_file)
 	df.drop(df.columns[[0]], axis=1, inplace=True)
@@ -45,7 +44,3 @@ def file_import(input_file):
 	final = {'nodes': nodes_list, 'links': links}
 
 	return dumps(final, indent=4, sort_keys=True)
-
-
-
-
