@@ -26,29 +26,47 @@ Date: February 21, 2017
     1) Simply run ./driver.py
       1.1) This will open the GUI
 
+-> Input files:
+	- The program takes Airports as the input with connecting flights having a source 
+	and destination
+	- The input file should have the format:
+	Count,    Value,     Destination,     Source
+	
+	
 
 -> Structure
 
   => Driver.py:
+	It is the core program and other methods are called from here
 		...
 		
   => graph_app.py:
+	Generates the graph and creates the GUI using tkinter
 		...
 		
   => importer.py:
+	Reads the input file and makes it compatible to be used by the rest of the program
 		...
 		
   => frontend_server.py:
+	Takes the data from grap_data and opens a web browser window
 		...
 		
   => /static/display_graph.js:
+	This is the main part of the program that creates the graph
 		...
 		
   => /templates/index.html:
 		...
 		
   => /input_files/:
+	Has the input files
 		...
+
+
+-> Required Libraries 
+	-Pandas need to be installed in the system 
+
 		
 
 -> For more info please read the 'write-up' file or feel free to contact me.
