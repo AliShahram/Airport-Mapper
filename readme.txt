@@ -72,8 +72,3 @@ Date: February 21, 2017
 -> For more info please read the 'write-up' file or feel free to contact me.
 ============================================================================================
 
-<img width="413" alt="Screen Shot 2019-06-29 at 4 33 24 AM" src="https://user-images.githubusercontent.com/25894620/60382332-3ed41800-9a27-11e9-8dfc-1513a28bb85e.png">
-
-
-<img width="358" alt="Screen Shot 2019-06-29 at 4 33 43 AM" src="https://user-images.githubusercontent.com/25894620/60382338-4b587080-9a27-11e9-8282-6e6f7f8d0bbd.png">
-
